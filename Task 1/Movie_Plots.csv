@@ -1,0 +1,12 @@
+import pandas as pd
+
+# Load the dataset from the specified location and change the file_path to match it to your own.
+file_path = r"C:\Users\92305\Downloads\Dataset Task 1.csv" 
+df = pd.read_csv(file_path)
+
+# Display the first few rows of the dataset to verify it loaded correctly
+print(df.head())
+
+# Save the dataset as 'movie_plots.csv' in the 'data' directory
+df.to_csv('data/movie_plots.csv', index=False)
+ 
